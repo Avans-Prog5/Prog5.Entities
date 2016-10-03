@@ -26,7 +26,7 @@ namespace Etities.ConsoleApp
                 }
                 System.Console.WriteLine(" ");
 
-                //Niet vergeten de 'teacher' ook op te vragen!
+
                 List<Teacher> teachers = context.Teachers.Include("Workshops").ToList();
 
                 System.Console.WriteLine("Teachers");
@@ -39,7 +39,20 @@ namespace Etities.ConsoleApp
                 }
                 System.Console.WriteLine(" ");
 
-            
+                //Niet vergeten de 'teacher' ook op te vragen!         
+                System.Console.WriteLine("Students");
+                foreach (var s in context.Students.Include("Workshops"))
+                {
+                    System.Console.WriteLine(String.Format("# {0}  - ", s.Name));
+                    s.Workshops.ToList().ForEach(w => System.Console.Write("{0},", w.Name));
+
+                }
+                System.Console.WriteLine(" ");
+
+                //Invoer uitwerking niet beschikbaar
+
+
+
             }
 
             System.Console.ReadLine();

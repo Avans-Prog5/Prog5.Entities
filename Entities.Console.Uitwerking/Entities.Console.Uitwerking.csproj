@@ -60,9 +60,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Entities.Domain\Entities.Domain.csproj">
-      <Project>{3959a1dd-c165-4838-b8d8-8f39b0d7ec14}</Project>
-      <Name>Entities.Domain</Name>
+    <ProjectReference Include="..\Entities.Domain.Uitwerking\Entities.Domain.Uitwerking.csproj">
+      <Project>{e9c3dfad-f521-4174-8de8-a2c2fd5d17e7}</Project>
+      <Name>Entities.Domain.Uitwerking</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

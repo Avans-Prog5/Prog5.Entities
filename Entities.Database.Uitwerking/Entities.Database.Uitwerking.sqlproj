@@ -66,6 +66,7 @@
     <Build Include="tables\Teacher.sql" />
     <None Include="Scripts\Seed\Teacher.sql" />
     <Build Include="Tables\Student.sql" />
+    <Build Include="Tables\StudentWorkshop.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="Entities.Database.refactorlog" />
@@ -77,6 +78,6 @@
     <None Include="Scripts\Seed\Workshop.sql" />
     <None Include="Entities.Database.LocalDB.publish.xml" />
     <None Include="Scripts\Seed\Student.sql" />
-    <None Include="Entities.Database.Uitwerking.jfm" />
+    <None Include="Scripts\Seed\StudentWorkshop.sql" />
   </ItemGroup>
 </Project>

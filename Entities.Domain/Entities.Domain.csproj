@@ -51,54 +51,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="C__RefactorLog.cs">
-      <DependentUpon>MyEntities.tt</DependentUpon>
-    </Compile>
-    <Compile Include="MyEntities.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>MyEntities.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="MyEntities.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>MyEntities.tt</DependentUpon>
-    </Compile>
-    <Compile Include="MyEntities.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>MyEntities.edmx</DependentUpon>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Teacher.cs">
-      <DependentUpon>MyEntities.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Workshop.cs">
-      <DependentUpon>MyEntities.tt</DependentUpon>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <EntityDeploy Include="MyEntities.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>MyEntities.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <None Include="MyEntities.edmx.diagram">
-      <DependentUpon>MyEntities.edmx</DependentUpon>
-    </None>
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="MyEntities.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>MyEntities.edmx</DependentUpon>
-      <LastGenOutput>MyEntities.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="MyEntities.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>MyEntities.edmx</DependentUpon>
-      <LastGenOutput>MyEntities.cs</LastGenOutput>
-    </Content>
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />

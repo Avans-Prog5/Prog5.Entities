@@ -9,6 +9,8 @@
         <EntityTypeShape EntityType="EntitiesModel.Teacher" Width="1.5" PointX="2.125" PointY="1" IsExpanded="true" />
         <EntityTypeShape EntityType="EntitiesModel.Workshop" Width="1.5" PointX="5.125" PointY="0.875" IsExpanded="true" />
         <AssociationConnector Association="EntitiesModel.FK_Workshop_Teacher" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="EntitiesModel.Student" Width="1.5" PointX="3.375" PointY="3.75" />
+        <AssociationConnector Association="EntitiesModel.StudentWorkshop" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

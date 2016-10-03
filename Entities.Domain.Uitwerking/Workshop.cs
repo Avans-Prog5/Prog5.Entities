@@ -14,11 +14,19 @@ namespace Entities.Domain
     
     public partial class Workshop
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public Workshop()
+        {
+            this.Students = new HashSet<Student>();
+        }
+    
         public int Id { get; set; }
         public string Name { get; set; }
         public string Summary { get; set; }
         public Nullable<int> TeacherId { get; set; }
     
         public virtual Teacher Teacher { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Student> Students { get; set; }
     }
 }

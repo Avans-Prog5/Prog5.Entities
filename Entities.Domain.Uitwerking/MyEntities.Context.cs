@@ -28,5 +28,6 @@ namespace Entities.Domain
         public virtual DbSet<C__RefactorLog> C__RefactorLog { get; set; }
         public virtual DbSet<Teacher> Teachers { get; set; }
         public virtual DbSet<Workshop> Workshops { get; set; }
+        public virtual DbSet<Student> Students { get; set; }
     }
 }

@@ -13,3 +13,4 @@ Post-Deployment Script Template
 :r .\Seed\Teacher.sql	
 :r .\Seed\Workshop.sql	
 :r .\Seed\Student.sql	
+:r .\Seed\StudentWorkshop.sql
