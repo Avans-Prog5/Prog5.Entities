@@ -5,6 +5,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
+
 namespace Etities.ConsoleApp
 {
     class Program
@@ -24,8 +26,23 @@ namespace Etities.ConsoleApp
                 }
                 System.Console.WriteLine(" ");
 
-                System.Console.ReadLine();
+                //Niet vergeten de 'teacher' ook op te vragen!
+                List<Teacher> teachers = context.Teachers.Include("Workshops").ToList();
+
+                System.Console.WriteLine("Teachers");
+                foreach (var t in teachers)
+                {
+                    System.Console.Write(String.Format("# {0}  - ", t.Name));
+                    t.Workshops.ToList().ForEach(w => System.Console.Write("{0},", w.Name));
+                    Console.WriteLine("--------");
+                   
+                }
+                System.Console.WriteLine(" ");
+
+            
             }
+
+            System.Console.ReadLine();
         }
     }
 }

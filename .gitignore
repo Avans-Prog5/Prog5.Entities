@@ -250,3 +250,5 @@ paket-files/
 # JetBrains Rider
 .idea/
 *.sln.iml
+/Entities.Database/Entities.Database.jfm
+/Entities.Database.Uitwerking/Entities.Database.Uitwerking.jfm
