@@ -14,7 +14,7 @@ namespace Etities.ConsoleApp
         static void Main(string[] args)
         {
             //Summary van alle workshops
-            using(var context = new Entities.Domain.MyEntities())
+            using (var context = new Entities.Domain.MyEntities())
             {
                 //Niet vergeten de 'teacher' ook op te vragen!
                 List<Workshop> workshops = context.Workshops.Include("Teacher").ToList();
