@@ -76,7 +76,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Scripts\Seed\Workshop.sql" />
-    <None Include="Entities.Database.LocalDB.publish.xml" />
     <None Include="Scripts\Seed\Student.sql" />
     <None Include="Scripts\Seed\StudentWorkshop.sql" />
   </ItemGroup>
