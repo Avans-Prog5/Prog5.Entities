@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2036
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Entities.Database", "Entities.Database\Entities.Database.sqlproj", "{4E8BC5CA-5031-4829-9B75-34A3E826F0F2}"
 EndProject
@@ -14,6 +14,8 @@ EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Entities.Database.Uitwerking", "Entities.Database.Uitwerking\Entities.Database.Uitwerking.sqlproj", "{29AB250A-19B9-47A8-98DA-1102C7900699}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entities.Domain.Uitwerking", "Entities.Domain.Uitwerking\Entities.Domain.Uitwerking.csproj", "{E9C3DFAD-F521-4174-8DE8-A2C2FD5D17E7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Uitwerking", "Uitwerking", "{F7CE72B4-9528-4F91-A145-C59D7092D7F1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -52,5 +54,13 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{41D0023D-942C-4959-88F5-905EBD215817} = {F7CE72B4-9528-4F91-A145-C59D7092D7F1}
+		{29AB250A-19B9-47A8-98DA-1102C7900699} = {F7CE72B4-9528-4F91-A145-C59D7092D7F1}
+		{E9C3DFAD-F521-4174-8DE8-A2C2FD5D17E7} = {F7CE72B4-9528-4F91-A145-C59D7092D7F1}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A4EABBDF-EE01-460D-B429-475794B737C5}
 	EndGlobalSection
 EndGlobal
